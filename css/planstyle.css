@@ -63,8 +63,8 @@
     top: 0;
 }
 
-.plan .featurs{
-
+.plan .featurs li:first-child{
+    margin-top: 20px;
 }
 .plan .featurs li{
     display: flex;

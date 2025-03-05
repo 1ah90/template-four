@@ -313,7 +313,7 @@ form label:hover input ~ span{
     gap: 10px;
 }
 .backup-manager .backup-size .type{
-    flex: 1;
+    flex: auto;
     height: 100%;
     position: relative;
     cursor: pointer;
