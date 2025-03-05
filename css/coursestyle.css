@@ -1,0 +1,75 @@
+:root{
+    --blue-color:#0075ff;
+    --font-color1: black;
+    --font-color2:#ddd;
+    --background1:white;
+    --background2:#f1f5f9;
+    --background3:#77777720;
+    --box-shadow1: 6px 0px 20px 0px #00000033;
+    --transition: 0.3s;
+    --orange-color:#f59e0b;
+    --orange-color05:rgb(245, 158, 11,0.2);
+    --blue-color:#0075ff;
+    --blue-color05:rgb(0, 117, 255,0.2);
+    --green-color:#22c55e;
+    --green-color05:rgb(34, 197, 94,0.2);
+    --red-color:#f44336;
+    --border-input:2px solid #77777720;
+}
+.courses{
+    gap: 10px;
+}
+
+
+.courses .course{
+    position: relative;
+    background-color: white;
+}
+.courses .course .backgournd{
+    width: 100%;
+    overflow: hidden;
+}
+.courses .course .backgournd img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.courses .course .avatar{
+    position: absolute;
+    width: 75px;
+    left: 30px;
+    top: 30px;
+    border: 3px solid white;
+    z-index: 1;
+}
+.courses .course .text {
+    height: 200px;
+}
+.courses .course h3{
+    font-size: 20px;
+
+}
+.courses .course p{
+    font-size: 14px;
+}
+.courses .course .info{
+    border-top: 1px var(--background3) solid;
+}
+.courses .course .info::before{
+    content: 'Course Info';
+    font-size: 15px;
+    position: absolute;
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+    padding: 5px 10px ;
+    background-color: var(--blue-color);
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+}
+.courses .course .info span{
+    color: gray;
+}

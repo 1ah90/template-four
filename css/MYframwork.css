@@ -1,0 +1,145 @@
+/* start display  */
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-flex-c{
+    display: flex;
+    flex-direction: column;
+
+}
+.d-grid{
+    display: grid;
+}
+.d-grid-2{
+    grid-template-columns: repeat(auto-fill , 50%);
+}
+.d-grid-3{
+    grid-template-columns: repeat(auto-fill , minmax(280px , 1fr));
+}
+.d-block{
+    display: block;
+}
+/* display flex elements */
+.basis-50{
+    flex-basis: 50%;
+}
+.c-flex{
+    justify-content: center;
+    align-items: center;
+}
+.flex-space{
+    justify-content: space-between;
+}
+.flex-1{
+    flex: 1;
+}
+/* end display */
+/* start position */
+.p-r{
+    position: relative;
+}
+.p-a{
+    position: absolute;
+}
+/* end position */
+.border-r12{
+    border-radius: 12px;
+}
+.border-r100{
+    /* use only for cube shape */
+    border-radius: 100%;
+}
+.line-border{
+    border-bottom: 2px solid var(--background2);
+
+}
+/* start padding & margin */
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-15top-bottom{
+    padding: 15px 0 15px;
+}
+.m-10{
+    margin: 10px;
+}
+.m-20{
+    margin: 20px;
+}
+.m-auto{
+    margin: auto;
+}
+.m-top-bottm20{
+    margin-top:20px ;
+    margin-bottom:20px ;
+
+}
+.m-p{
+    margin: 5px 0 10px 0;
+}
+.g-20{
+    gap: 20px;
+}
+/* end padding & margin & gap */
+
+/* center items  */
+.t-c{
+    text-align: center;
+}
+.align-items{
+    align-items: center;
+}
+.c-abso{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.c-absoX{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.c-absoY{
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* here are my backgournd color  */
+.bg-color-W{
+    background-color: rgb(119, 119, 119);
+}
+.font-color7{
+    color: #777;
+}
+/* here is width & height size */
+.width45{
+    width: 45px;
+}
+.width55{
+    width: 55px;
+}
+.width75{
+    width: 85px;
+}
+.width100{
+    width: 100%;
+}
+.height75{
+    height: 75px;
+}
+.height55{
+    height: 55px;
+}
+.width-fit{
+    width: fit-content;
+}
+.height-fit{
+    height: fit-content;
+}
+/* some elements */
+.poitner{
+    cursor: pointer;
+}

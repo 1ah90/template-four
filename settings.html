@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- style sheet web -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <!-- normlize all elements -->
+    <link rel="normalizesheet" href="css/normalize.css">
+    <!-- my framwork css -->
+    <link rel="stylesheet" href="css/MYframwork.css">
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/6c0ed9e6d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="side-bar">
+            <span class="title d-block t-c p-20 p-r">Ahmad</span>
+            <ul>
+                <li>
+                    <a href="./dashboard.html" ><i class="fa-solid fa-chart-gantt"></i> <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="./settings.html" class="active"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+                </li>
+                <li>
+                    <a href="./profile.html"><i class="fa-regular fa-user"></i> <span>Profile</span></a>
+                </li>
+                <li>
+                    <a href="./projects.html"><i class="fa-solid fa-diagram-project"></i> <span>Projects</span></a>
+                </li>
+                <li>
+                    <a href="./courses.html"><i class="fa-solid fa-graduation-cap"></i> <span>Courses</span></a>
+                </li>
+                <li>
+                    <a href="./friends.html"><i class="fa-regular fa-credit-card"></i> <span>Friends</span></a>
+                </li>
+                <li>
+                    <a href="./files.html"><i class="fa-regular fa-file"></i> <span>Files</span></a>
+                </li>
+                <li>
+                    <a href="./plans.html"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-bar">
+            <header class="p-20 d-flex .bg-color-W">
+                <div class="search p-r">
+                    <input type="search" placeholder="Keyboard">
+                </div>
+                <div class="profile d-flex c-flex">
+                    <img src="./imgs/avatar.png" alt="">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+            </header>
+            <h1 class="dashboard-title p-20 p-r">Sittings</h1>
+            <div class="dashboard-info d-flex p-20">
+                <div class="control border-r12 p-r dashboard-box">
+                    <h2>Site Control</h2>
+                    <p class="m-p">Control The Website If There Is Maintenance</p>
+                    <div class="control-web d-flex flex-space">
+                        <div class="text">
+                            <h5>Website Control</h5>
+                            <p>Open/Close Website And Type The Reason</p>
+                        </div>
+                        <label class="switch-holder p-r">
+                            <input checked="checked" type="checkbox" >
+                            <span class="switch"></span>
+                        </label>
+                    </div>
+                    <textarea placeholder="Close Message Content" class="border-r12 p-10"></textarea>
+                </div> 
+                <div class="general border-r12 p-r dashboard-box">
+                    <h2>General Info</h2>
+                    <p class="m-p">General Information About Your Account</p>
+                    <div class="p-15top-bottom">
+                        <p>First Name</p>
+                        <input type="text" class="p-10 border-r12" placeholder="First Name" name="Name" id="">
+                    </div>
+                    <div class="p-15top-bottom">
+                        <p>last Name</p>
+                        <input  type="text" class="p-10 border-r12" placeholder="last Name" name="last-Name" id="">
+                    </div>
+                    <div class="p-15top-bottom">
+                        <p>Email</p>
+                        <div class="email d-flex ">
+                            
+                            <input class="flex-1 p-10 border-r12" type="email" disabled placeholder="0@nn.sa" name="email" id="">
+                            <a href="#">Change</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="security border-r12 p-r dashboard-box">
+                    <h2>Security Info</h2>
+                    <p class="m-p">Security Information About Your Account</p>
+                    <div class="holder d-flex-c">
+                        <div class="pass text d-flex flex-space line-border p-15top-bottom">
+                            <div>
+                                <h4>Password</h4>
+                                <p>Last Change On 25/10/2021</p>    
+                            </div>
+                            <a href="#" class="border-r12">Devices</a>
+                        </div>
+                        <div class="authentication d-flex flex-space line-border p-15top-bottom">
+                            <div class="text">
+                                <h4>Two-Factor Authentication</h4>
+                                <p>Last Change On 25/10/2021</p>        
+                            </div>
+                            <label class="switch-holder p-r">
+                                <input type="checkbox">
+                                <span class="switch"></span>
+                            </label>  
+                        </div>
+                        <div class="device d-flex flex-space line-border p-15top-bottom">
+                            <div class="text">
+                                <h4>Devices</h4>
+                                <p>Check The Login Devices List</p>    
+                            </div>
+                            <a href="#" class="border-r12">Devices</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-info border-r12 p-r dashboard-box">
+                    <h2>Social Info</h2>
+                    <p class="m-p">Social Media Information</p>
+                    <div class="holder-social d-flex-c">
+                        <div class="d-flex border-r12">
+                            <input class="flex-1" type="text" placeholder="Facebook Username">
+                            <i class=" fa-brands width-fit height-fit t-c  fa-facebook-f"></i>
+                        </div>
+                        <div class="d-flex border-r12">
+                            <input class="flex-1" type="text" placeholder="Youtube Username">
+                            <i class="fa-brands width-fit height-fit t-c fa-youtube"></i>
+                        </div>
+                        <div class="d-flex border-r12">
+                            <input class="flex-1" type="text" placeholder="Linkedin Username">
+                            <i class="icon fa-brands width-fit height-fit t-c fa-linkedin"></i>
+                        </div>
+                        <div class="d-flex border-r12">
+                            <input class="flex-1" type="text" placeholder="Twitter Username">
+                            <i class="fa-brands width-fit height-fit t-c fa-x-twitter"></i>
+                        </div>
+                    </div>
+                </div> 
+                <div class="widgets border-r12 p-r dashboard-box">
+                    <h2>Widgets Control</h2>
+                    <p class="m-p">Show/Hide Widgets</p>
+                    <form  action="">
+                        <label>
+                            <input checked="checked" type="checkbox"> 
+                            <span class="Check"></span>
+                            Quick Draft
+                        </label> <br>
+                        <label>
+                            <input checked="checked" type="checkbox"> 
+                            <span class="Check"></span>
+                            Yearly Targets
+                        </label> <br>
+                        <label>
+                            <input type="checkbox "> 
+                            <span class="Check"></span>
+                            Tickets Statistics
+                        </label> <br>
+                        <label>
+                            <input checked="checked" type="checkbox"> 
+                            <span class="Check"></span>
+                            Latest News
+                        </label> <br>
+                        <label>
+                            <input type="checkbox"> 
+                            <span class="Check"></span>
+                            Latest Tasks
+                        </label> <br>
+                        <label>
+                            <input checked="checked" type="checkbox"> 
+                            <span class="Check"></span>
+                            Top Search Items
+                        </label> <br>
+                    </form>
+                </div> 
+                <div class="backup-manager border-r12 p-r dashboard-box">
+                    <h2>Backup Manager</h2>
+                    <p class="m-p">Control Backup Time And Location</p>
+                    <div class="holder-manger">
+                        <form class="d-flex-c" action="">
+                            <label for="daily">Daily
+                                <input type="radio" name="fav_language" id="daily" > 
+                                <span></span>
+                            </label> <br>
+                            <label for="month">Month
+                                <input checked="checked" type="radio" name="fav_language" id="month" > 
+                                <span></span>
+                            </label> <br>
+                            <label for="year">Year
+                                <input type="radio" name="fav_language" id="year" > 
+                                <span></span>
+                            </label> <br>
+
+                        </form>
+
+                        <div class="backup-size d-flex p-15top-bottom">
+                            <label class="type border-r12 p-10 t-c">
+                                <input type="radio"  name="fav_language">
+                                <span class="change"></span>
+                                <i class="fa-solid fa-server"></i>
+                                <h3>Megaman</h3>
+                            </label>
+                            <label class="type border-r12 p-10 t-c">
+                                <input type="radio"  name="fav_language">
+                                <span class="change"></span>
+                                <i class="fa-solid fa-server"></i>
+                                <h3>Zero</h3>
+                            </label>
+                            <label class="type border-r12 p-10 t-c">
+                                <input checked="checked" type="radio"  name="fav_language">
+                                <span class="change"></span>
+                                <i class="fa-solid fa-server"></i>
+                                <h3>Sigma</h3>
+                            </label>
+                        </div>
+                    </div>
+                </div> 
+        </div>
+    </div>
+</body>
+</html>

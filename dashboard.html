@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- style sheet web -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- normlize all elements -->
+    <link rel="normalizesheet" href="css/normalize.css">
+    <!-- my framwork css -->
+    <link rel="stylesheet" href="css/MYframwork.css">
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/6c0ed9e6d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="side-bar">
+            <span class="title d-block t-c p-20 p-r">Ahmad</span>
+            <ul>
+                <li>
+                    <a href="./dashboard.html" class="active"><i class="fa-solid fa-chart-gantt"></i> <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="./settings.html"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+                </li>
+                <li>
+                    <a href="./profile.html"><i class="fa-regular fa-user"></i> <span>Profile</span></a>
+                </li>
+                <li>
+                    <a href="./projects.html"><i class="fa-solid fa-diagram-project"></i> <span>Projects</span></a>
+                </li>
+                <li>
+                    <a href="./courses.html"><i class="fa-solid fa-graduation-cap"></i> <span>Courses</span></a>
+                </li>
+                <li>
+                    <a href="./friends.html"><i class="fa-regular fa-credit-card"></i> <span>Friends</span></a>
+                </li>
+                <li>
+                    <a href="./files.html"><i class="fa-regular fa-file"></i> <span>Files</span></a>
+                </li>
+                <li>
+                    <a href="./plans.html"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-bar">
+            <header class="p-20 d-flex .bg-color-W">
+                <div class="search p-r">
+                    <input type="search" placeholder="Keyboard">
+                </div>
+                <div class="profile d-flex c-flex">
+                    <img src="./imgs/avatar.png" alt="">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+            </header>
+            <h1 class="dashboard-title p-20 p-r">Dashboard</h1>
+            <!--here is my dashboard boxes start -->
+            <div class="dashboard-info d-flex p-20">
+                <div class="welcome border-r12 p-r dashboard-box">
+                    <div class="profile-title d-flex flex-space">
+                        <div class="text d-block">
+                            <h2>Welcome</h2>
+                            <p class="m-p">Ahmad</p>
+                        </div>
+                        <img class="welcome-img" src="./imgs/welcome.png" alt="">
+                    </div>
+                    <img class="avatar-img border-r100 width55" src="./imgs/avatar.png" alt="">
+                    <div class="profile-info d-flex flex-space p-20 t-c m-top-bottm20">
+                        <div>
+                            <h3>Ahmad Mutlq</h3>
+                            <p>Developer</p>
+                        </div>
+                        <div>
+                            <h3>80</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div>
+                            <h3>$9000</h3>
+                            <p>Earned</p>
+                        </div>
+                    </div>
+                    <a class="width-fit d-block t-c border-r12" href="#">Profile</a>
+                </div>
+
+                <div class="quick-draft d-flex-c border-r12 dashboard-box">
+                    <h2>Quick Draft</h2>
+                    <p class="m-p">Write A Draft For Your Ideas</p>
+                    <input class="p-10 border-r12" type="text" placeholder="Title">
+                    <textarea class="p-10 border-r12 m-top-bottm20" name="comment" placeholder="Your Thought" id="" rea></textarea>
+                    <a class="width-fit d-block t-c border-r12" href="#">Save</a>
+                </div>
+
+                <div class="yearly-targets border-r12 dashboard-box">
+                    <h2>Yearly Targets</h2>
+                    <p class="m-p">Targets Of The Year</p>
+                    <div class="targets d-flex d-flex-c">
+                        <div class="box d-flex">
+                            <div class="icon-1 d-block width75 height75 t-c p-r ">
+                                <i class="fa-solid fa-dollar-sign c-abso"></i>
+                            </div>
+                            <div class="d-flex-c flex-1 p-10">
+                                <p>Money</p>
+                                <h3>$20.000</h3>
+                                <div  class="pro-holder width100 p-r" style="height: 3px ;">
+                                    <span class="d-block" style="width: 85%;" data-progress="85%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box d-flex">
+                            <div class="icon-2 d-block width75 height75 t-c p-r ">
+                                <i class="fa-solid fa-code c-abso"></i>
+                            </div>
+                            <div class="d-flex-c flex-1 p-10">
+                                <p>Projects</p>
+                                <h3>24</h3>
+                                <div  class="pro-holder width100 p-r" style="height: 3px ;">
+                                    <span class="d-block" style="width: 65%;" data-progress="65%"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box d-flex">
+                            <div class="icon-3 d-block width75 height75 t-c p-r ">
+                                <i class="fa-solid fa-user c-abso"></i>
+                            </div>
+                            <div class="d-flex-c flex-1 p-10">
+                                <p>Team</p>
+                                <h3>12</h3>
+                                <div  class="pro-holder width100 p-r" style="height: 3px ;">
+                                    <span class="d-block" style="width: 42%;" data-progress="42%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tickets border-r12 dashboard-box">
+                    <h2>Tickets Statistics</h2>
+                    <p class="m-p">Everything About Support Tickets</p>
+                    <div class="tickets-holder d-grid t-c">
+                        <div class="box">
+                            <i class="fa-solid fa-newspaper"></i>
+                            <h2>2500</h2>
+                            <p>total</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-solid fa-spinner"></i>
+                            <h2>500</h2>
+                            <p>Pending</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-regular fa-circle-check"></i>
+                            <h2>1900</h2>
+                            <p>Closed</p>
+                        </div>
+                        <div class="box">
+                            <i class="fa-regular fa-circle-xmark"></i>
+                            <h2>100</h2>
+                            <p>Deleted</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="news border-r12 dashboard-box">
+                    <h2>Latest News</h2>
+                    <div class="holder-news d-flex-c">
+                        <div class="news d-flex flex-space p-15top-bottom line-border">
+                            <img class="width75 border-r12" src="./imgs/news-01.png" alt="">
+                            <div class="text">
+                                <h3>Created SASS Section</h3>
+                                <p>New SASS Examples & Tutorials</p>
+                            </div>
+                            <h6>3 Days Ago</h6>
+                        </div>
+                        <div class="news d-flex flex-space p-15top-bottom line-border">
+                            <img class="width75 border-r12" src="./imgs/news-02.png" alt="">
+                            <div class="text">
+                                <h3>Changed The Design</h3>
+                                <p>A Brand New Website Design</p>
+                            </div>
+                            <h6>5 Days Ago</h6>
+                        </div>
+                        <div class="news d-flex flex-space p-15top-bottom line-border">
+                            <img class="width75 border-r12" src="./imgs/news-03.png" alt="">
+                            <div class="text">
+                                <h3>Team Increased</h3>
+                                <p>3 Developers Joined The Team</p>
+                            </div>
+                            <h6>7 Days Ago</h6>
+                        </div>
+                        <div class="news d-flex flex-space p-15top-bottom line-border">
+                            <img class="width75 border-r12" src="./imgs/news-04.png" alt="">
+                            <div class="text">
+                                <h3>Added Payment Gateway</h3>
+                                <p>Many New Payment Gateways Added</p>
+                            </div>
+                            <h6>3 Days Ago</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="tasks border-r12 dashboard-box">
+                    <h2>Latest Tasks</h2>
+                    <div class="tasks d-flex-c">
+                        <div class="task line-border p-15top-bottom d-flex">
+                            <div class="text flex-1">
+                                <h4>Record One New Video</h4>
+                                <p>Record Python Create Exe Project</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="task line-border p-15top-bottom d-flex">
+                            <div class="text flex-1">
+                                <h4>Write Aricle</h4>
+                                <p>Write Low Level vs High Level Language</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="task line-border p-15top-bottom d-flex">
+                            <div class="text flex-1">
+                                <h4>Finish Project</h4>
+                                <p>Publish Academy Programming Project</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="task line-border p-15top-bottom deleted d-flex">
+                            <div class="text flex-1">
+                                <h4>Attend The Meeting</h4>
+                                <p>Attend The Project Business Analysis Meeting</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                        <div class="task line-border p-15top-bottom d-flex">
+                            <div class="text flex-1">
+                                <h4>Finish Lesson</h4>
+                                <p>Finish Teaching Flex Box</p>
+                            </div>
+                            <i class="fa-regular fa-trash-can"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-search border-r12 dashboard-box">
+                    <h2>Top Search Items</h2>
+                    <div class="holder-items d-flex-c">
+                        <div class="item d-flex flex-space p-15top-bottom">
+                            <p>Keyword</p>
+                            <p>Search Count</p>
+                        </div>
+                        <div class="item d-flex flex-space p-15top-bottom">
+                            <h5>Programming</h5>
+                            <h6 class="width-fit height-fit p-10 d-block border-r12">220</h6>
+                        </div>
+                        <div class="item d-flex flex-space p-15top-bottom">
+                            <h5>jafaScript</h5>
+                            <h6 class="width-fit height-fit p-10 d-block border-r12">180</h6>
+                        </div>
+                        <div class="item d-flex flex-space p-15top-bottom">
+                            <h5>PHP</h5>
+                            <h6 class="width-fit height-fit p-10 d-block border-r12">160</h6>
+                        </div>
+                        <div class="item d-flex flex-space p-15top-bottom">
+                            <h5>Code</h5>
+                            <h6 class="width-fit height-fit p-10 d-block border-r12">145</h6>
+                        </div>
+                        <div class="item d-flex flex-space p-15top-bottom">
+                            <h5>Design</h5>
+                            <h6 class="width-fit height-fit p-10 d-block border-r12">110</h6>
+                        </div>
+                        <div class="item d-flex flex-space p-15top-bottom">
+                            <h5>Logic</h5>
+                            <h6 class="width-fit height-fit p-10 d-block border-r12">95</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="uploads border-r12 dashboard-box">
+                    <h2>Latest Uploads</h2>
+                    <div class="holder-files d-flex-c ">
+                        <div class="file d-flex p-15top-bottom line-border">
+                            <img class="width45" src="./imgs/pdf.svg" alt="">
+                            <div class="text flex-1">
+                                <h5>my-file.pdf</h5>
+                                <p>Ahmad</p>
+                            </div>
+                            <span class="width-fit height-fit p-10 border-r12">2.9mb</span>
+                        </div>
+
+                        <div class="file d-flex p-15top-bottom line-border">
+                            <img class="width45" src="./imgs/avi.svg" alt="">
+                            <div class="text flex-1">
+                                <h5>My-Video-File.avi</h5>
+                                <p>Admin</p>
+                            </div>
+                            <span class="width-fit height-fit p-10 border-r12">4.9mb</span>
+                        </div>
+
+                        <div class="file d-flex p-15top-bottom line-border">
+                            <img class="width45" src="./imgs/psd.svg" alt="">
+                            <div class="text flex-1">
+                                <h5>My-Psd-File.pdf</h5>
+                                <p>Mutlaq</p>
+                            </div>
+                            <span class="width-fit height-fit p-10 border-r12">2.9mb</span>
+                        </div>
+
+                        <div class="file d-flex p-15top-bottom line-border">
+                            <img class="width45" src="./imgs/pdf.svg" alt="">
+                            <div class="text flex-1">
+                                <h5>My-file.pdf</h5>
+                                <p>Ahmad</p>
+                            </div>
+                            <span class="width-fit height-fit p-10 border-r12">4.5mb</span>
+                        </div>
+
+                        <div class="file d-flex p-15top-bottom line-border">
+                            <img class="width45" src="./imgs/pdf.svg" alt="">
+                            <div class="text flex-1">
+                                <h5>My-Zip-File.pdf</h5>
+                                <p>User</p>
+                            </div>
+                            <span class="width-fit height-fit p-10 border-r12">8.9mb</span>
+                        </div>
+
+                        <div class="file d-flex p-15top-bottom line-border">
+                            <img class="width45" src="./imgs/dll.svg" alt="">
+                            <div class="text flex-1">
+                                <h5>My-DLL-File.pdf</h5>
+                                <p>Admin</p>
+                            </div>
+                            <span class="width-fit height-fit p-10 border-r12">2.9mb</span>
+                        </div>
+
+                        <div class="file d-flex p-15top-bottom line-border">
+                            <img class="width45" src="./imgs/eps.svg" alt="">
+                            <div class="text flex-1">
+                                <h5>My-Eps-File.pdf</h5>
+                                <p>Designer</p>
+                            </div>
+                            <span class="width-fit height-fit p-10 border-r12">2.9mb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-projress border-r12 p-r dashboard-box  ">
+                    <h2>Last Project Progress</h2>
+                    <div class="holder-progress d-flex-c  p-15top-bottom">
+                        <h5 class="p-15top-bottom">Got The Project</h5>
+                        <h5 class="p-15top-bottom">Started The Project</h5>
+                        <h5 class="p-15top-bottom">The Project About To Finish</h5>
+                        <h5 class="active p-15top-bottom">Test The Project</h5>
+                        <h5 class="p-15top-bottom">Finish The Project & Get Money</h5>
+                    </div>
+                    <img src="./imgs/project.png" alt="">
+                </div>
+                <div class="reminders border-r12 dashboard-box">
+                    <h2>Reminders</h2>
+                    <ul class="holder-reminer d-flex-c p-15top-bottom">
+                        <li class="d-flex p-10">
+                            <div class="width55 height55 p-r"></div>
+                            <div class="text flex-1 m-auto">
+                                <h5>Check My Tasks List</h5>
+                                <p>28/09/2022 - 12:00am</p>    
+                            </div>
+                        </li>
+
+                        <li class="d-flex p-10">
+                            <div class="width55 height55 p-r"></div>
+                            <div class="text flex-1 m-auto">
+                                <h5>Check My Projects</h5>
+                                <p>26/10/2022 - 12:00am</p>    
+                            </div>
+                        </li>
+
+                        <li class="d-flex p-10">
+                            <div class="width55 height55 p-r"></div>
+                            <div class="text flex-1 m-auto">
+                                <h5>Call All My Clients</h5>
+                                <p>05/11/2022 - 12:00am</p>    
+                            </div>
+                        </li>
+
+                        <li class="d-flex p-10">
+                            <div class="width55 height55 p-r"></div>
+                            <div class="text flex-1 m-auto">
+                                <h5>Finish The Development Workshop</h5>
+                                <p>20/12/2022 - 12:00am</p>    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="post border-r12 dashboard-box">
+                    <h2>Latest Post</h2>
+                    <div class="holder-post">
+                        <div class="title line-border d-flex p-15top-bottom">
+                            <img class="avatar-img border-r100 width55" src="./imgs/avatar.png" alt="">
+                            <div class="text flex-1 m-auto">
+                                <h5>Ahmad Mutlaq</h5>
+                                <p>Avout 3 Hours Ago</p>
+                            </div>
+                        </div>
+                        <h5 class="p-15top-bottom line-border">You can fool all of the people some of the time, and some of the people all of the time, but you can't fool all of the people all of the time.</h5>
+                        <ul class="p-15top-bottom d-flex ">
+                            <li class="d-flex c-flex">
+                                <i class="fa-regular  fa-heart"></i>
+                                <p>1.5k</p>
+                            </li>
+                            <li class="d-flex c-flex">
+                                <p>342</p>
+                                <i class= "fa-regular fa-comments"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-media border-r12 dashboard-box">
+                    <h2>Social Media Stats</h2>
+                    <ul class="holder-media d-flex-c p-15top-bottom">
+                        <li class="d-flex">
+                            <div class="holder-icon d-flex-c width55 height55 ">
+                                <i class="fa-brands t-c m-auto fa-x-twitter"></i>
+                            </div>
+                            <div class="flex-1">
+                                90K Followers
+                            </div>
+                            <span class="p-10 border-r12 poitner">Follow</span>
+                        </li>
+                        <li class="d-flex">
+                            <div class="holder-icon d-flex-c width55 height55 ">
+                                <i class=" fa-brands t-c m-auto  fa-facebook-f"></i>
+                            </div>
+                            <div class="flex-1">
+                                2M Like 
+                            </div>
+                            <span class="p-10 border-r12 poitner">Like</span>
+                        </li>
+                        <li class="d-flex">
+                            <div class="holder-icon d-flex-c width55 height55 ">
+                                <i class="fa-brands t-c m-auto fa-youtube"></i>
+                            </div>
+                            <div class="flex-1">
+                                1M Subscribe
+                            </div>
+                            <span class="p-10 border-r12 poitner">Subscribe</span>
+                        </li>
+                        <li class="d-flex">
+                            <div class="holder-icon d-flex-c width55 height55 ">
+                                <i class="fa-brands t-c m-auto fa-linkedin"></i>
+                            </div>
+                            <div class="flex-1">
+                                70K Followers
+                            </div>
+                            <span class="p-10 border-r12 poitner">Follow</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="projects border-r12 flex-1 dashboard-box">
+                    <h2>projects</h2>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Finish Date</th>
+                            <th>Client</th>
+                            <th>Price</th>
+                            <th>Team</th>
+                            <th>h5</th>
+                        </tr>
+                        <tr>
+                            <td>Ministry Wikipedia</td>
+                            <td>10 May 2022	</td>
+                            <td>Ministry</td>
+                            <td>$5300</td>
+                            <td>
+                                <img class="width45 border-r100 " src="./imgs/team-01.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-02.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-03.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-04.png" alt="">
+                            </td>
+                            <td class="p-10"><h5 class="border-r12 height-fit width-fit p-10">Pending</h5></td>
+                        </tr>
+                        <tr>
+                            <td>Elzero Shop</td>
+                            <td>12 Oct 2021	</td>
+                            <td>Elzero Company</td>
+                            <td>$1500</td>
+                            <td>
+                                <img class="width45 border-r100 " src="./imgs/team-01.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-02.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-03.png" alt="">
+                            </td>
+                            <td><h5 class="border-r12 height-fit width-fit p-10">In Progress</h5></td>
+                        </tr>
+                        <tr>
+                            <td>Bouba App</td>
+                            <td>05 Sep 2021</td>
+                            <td>Bouba</td>
+                            <td>$800</td>
+                            <td>
+                                <img class="width45 border-r100 " src="./imgs/team-01.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-02.png" alt="">
+                            </td>
+                            <td><h5 class="border-r12 height-fit width-fit p-10">Completed</h5></td>
+                        </tr>
+                        <tr>
+                            <td>Mahmoud Website</td>
+                            <td>22 May 2021</td>
+                            <td>Mahmoud</td>
+                            <td>$600</td>
+                            <td>
+                                <img class="width45 border-r100" src="imgs/team-03.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-04.png" alt="">
+                            </td>
+                            <td><h5 class="border-r12 height-fit width-fit p-10">Completed</h5></td>
+                        </tr>
+                        <tr>
+                            <td>Sayed Website</td>
+                            <td>24 May 2021</td>
+                            <td>Sayed</td>
+                            <td>$300</td>
+                            <td>
+                                <img class="width45 border-r100" src="imgs/team-02.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-03.png" alt="">
+                            </td>
+                            <td><h5 class="border-r12 height-fit width-fit p-10">Rejected</h5></td>
+                        </tr>
+                        <tr>
+                            <td>Arena Application</td>
+                            <td>01 Mar 2021</td>
+                            <td>Arena Company</td>
+                            <td>$2600</td>
+                            <td>
+                                <img class="width45 border-r100 " src="./imgs/team-01.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-02.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-03.png" alt="">
+                                <img class="width45 border-r100" src="imgs/team-05.png" alt="">
+                            </td>
+                            <td><h5 class="border-r12 height-fit width-fit p-10">Completed</h5></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

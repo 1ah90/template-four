@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- all my pages -->
+    <link rel="htmlsheet" href="settings.html">
+    <!-- style sheet web -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/friendsstyle.css">
+    <!-- normlize all elements -->
+    <link rel="normalizesheet" href="css/normalize.css">
+    <!-- my framwork css -->
+    <link rel="stylesheet" href="css/MYframwork.css">
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/6c0ed9e6d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="side-bar">
+            <span class="title d-block t-c p-20 p-r">Ahmad</span>
+            <ul>
+                <li>
+                    <a href="./dashboard.html" ><i class="fa-solid fa-chart-gantt"></i> <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="./settings.html"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+                </li>
+                <li>
+                    <a href="./profile.html"><i class="fa-regular fa-user"></i> <span>Profile</span></a>
+                </li>
+                <li>
+                    <a href="./projects.html"><i class="fa-solid fa-diagram-project"></i> <span>Projects</span></a>
+                </li>
+                <li>
+                    <a href="./courses.html"><i class="fa-solid fa-graduation-cap"></i> <span>Courses</span></a>
+                </li>
+                <li>
+                    <a href="./friends.html" class="active"><i class="fa-regular fa-credit-card"></i> <span>Friends</span></a>
+                </li>
+                <li>
+                    <a href="./files.html"><i class="fa-regular fa-file"></i> <span>Files</span></a>
+                </li>
+                <li>
+                    <a href="./plans.html"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-bar">
+            <header class="p-20 d-flex .bg-color-W">
+                <div class="search p-r">
+                    <input type="search" placeholder="Keyboard">
+                </div>
+                <div class="profile d-flex c-flex">
+                    <img src="./imgs/avatar.png" alt="">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+            </header>
+            <h1 class="dashboard-title p-20 p-r">Friends</h1>
+            <div class="friends p-20 p-r d-grid d-grid-3">
+                <div class="friend p-r d-flex-c border-r12">
+
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-01.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Ahmad Nasser</h4>
+                        <p>JavaScript Developer </p>
+                    </div>
+                    <ul class="share line-border  p-20 p-r">
+                        <li><i class="fa-regular fa-face-smile"></i>99 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>25 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>25 Articles</li>
+                        <span class="vip">VIP</span>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/10/2021</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-02.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Omar Fathy</h4>
+                        <p>Cloud Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20">
+                        <li><i class="fa-regular fa-face-smile"></i>30 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>11 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>12 Articles</li>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/08/2020</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-03.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Omar Ahmed</h4>
+                        <p>Mobile Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20">
+                        <li><i class="fa-regular fa-face-smile"></i>80 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>20 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>18 Articles</li>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/06/2020</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-04.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Shady Nabil</h4>
+                        <p>Back-End Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20">
+                        <li><i class="fa-regular fa-face-smile"></i>70 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>30 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>18 Articles</li>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 28/06/2023</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-05.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Mohamed Ibrahim</h4>
+                        <p>Algorithm Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20">
+                        <li><i class="fa-regular fa-face-smile"></i>80 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>30 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>18 Articles</li>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 27/11/2021</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-02.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Amr Hendawy</h4>
+                        <p> Back-End Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20">
+                        <li><i class="fa-regular fa-face-smile"></i>70 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>30 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>18 Articles</li>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/10/2021</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-01.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Mahmoud Adel</h4>
+                        <p>Cloud Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20">
+                        <li><i class="fa-regular fa-face-smile"></i>30 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>11 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>32 Articles</li>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/10/2021</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-04.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Ahmed Abuzaid</h4>
+                        <p>Content Creator</p>
+                    </div>
+                    <ul class="share line-border  p-20 p-r">
+                        <li><i class="fa-regular fa-face-smile"></i>32 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>76 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>33 Articles</li>
+                        <span class="vip">VIP</span>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/10/2021</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-03.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Gareeb Elshiekh</h4>
+                        <p>JavaScript Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20 p-r">
+                        <li><i class="fa-regular fa-face-smile"></i>90 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>15 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>25 Articles</li>
+                        <span class="vip">VIP</span>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/10/2021</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+
+                <div class="friend p-r d-flex-c border-r12">
+                    <div class="content">
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                    <img class="border-r100 width75 m-auto" src="./imgs/friend-05.jpg" alt="">
+                    <div class="text line-border t-c p-20">
+                        <h4>Hamza</h4>
+                        <p>Front-End Developer</p>
+                    </div>
+                    <ul class="share line-border  p-20">
+                        <li><i class="fa-regular fa-face-smile"></i>80 Friend</li>
+                        <li><i class="fa-solid fa-diagram-project"></i>20 Projects</li>
+                        <li><i class="fa-regular fa-newspaper"></i>16 Articles</li>
+                    </ul>
+                    <ul class="d-flex">
+                        <span class="p-10">Joined 02/10/2021</span>
+                        <li><a href="./profile.html">Profile</a></li>
+                        <li><a href="#">Remove</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

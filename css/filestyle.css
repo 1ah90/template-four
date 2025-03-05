@@ -1,0 +1,144 @@
+:root{
+    --blue-color:#0075ff;
+    --font-color1: black;
+    --font-color2:#ddd;
+    --background1:white;
+    --background2:#f1f5f9;
+    --background3:#77777720;
+    --box-shadow1: 6px 0px 20px 0px #00000033;
+    --transition: 0.3s;
+    --orange-color:#f59e0b;
+    --orange-color05:rgb(245, 158, 11,0.2);
+    --blue-color:#0075ff;
+    --blue-color05:rgb(0, 117, 255,0.2);
+    --green-color:#22c55e;
+    --green-color05:rgb(34, 197, 94,0.2);
+    --red-color:#f44336;
+    --border-input:2px solid #77777720;
+}
+/* here are all my file data file by file  */
+.all-files{
+    gap: 20px;
+}
+.my-files{
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill , minmax(200px , 1fr));
+}
+
+@media (max-width:650px) {
+    .all-files {
+        flex-direction: column-reverse;
+    }
+}
+.file{
+    background-color: var(--background1);
+}
+
+.file span:first-child ,
+.file .name{
+    text-align: left;
+    color: gray;
+    transition: var(--transition);
+}
+.file span:first-child:hover{
+    color: var(--blue-color);
+    cursor: pointer;
+    margin: 5px 0 0 5px;
+    font-size: 18px;
+}
+
+.file img{
+    transition: var(--transition);
+}
+.file img:hover{
+    transform: rotate(20deg);
+}
+.file p{
+    font-size: 14px;
+}
+.file h4{
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+/* here is statistics box style start  */
+.info-files{
+    width: 300px;
+    height: fit-content;
+    background-color: var(--background1);
+}
+@media (max-width:650px) {
+    .info-files{
+        margin: auto;
+        width: 100%;
+    }
+}
+
+.info-files .info {
+    margin-top: 20px;
+    gap: 20px;
+}
+.info-files .box{
+    gap: 10px;
+    justify-content: space-between;
+    border: 1px solid var(--background3);
+    align-items: center;
+}
+.info-files .box li:first-child{
+    width: 50px;
+    height: 50px;
+}
+.info-files .box:nth-child(1) li:first-child{
+    background-color: #0077ff4f;
+    color: var(--blue-color);
+}
+
+.info-files .box:nth-child(2) li:first-child{
+    background-color: #22c55e4f;
+    color: var(--green-color);
+}
+
+.info-files .box:nth-child(3) li:first-child{
+    background-color: #f443364f;
+    color: var(--red-color);
+}
+
+.info-files .box:nth-child(4) li:first-child{
+    background-color: #f59e0b4f;
+    color: var(--orange-color);
+}
+
+.info-files .text h5{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.info-files li:last-child{
+    color: gray;
+}
+
+.info-files .info .button{
+    background-color: var(--blue-color);
+    color: white;
+    font-size: 14px;
+}
+
+.info-files .info .button i{
+    font-size: 12px;
+    position: relative;
+    transition: var(--transition);
+}
+.info-files .info .button:hover i{
+    margin: 5px 15px 5px 10px;
+    animation: rise-up  infinite  1s ;
+
+}
+
+@keyframes rise-up{
+    0% , 100%{
+        top: 5px;
+    }
+    50%{
+        top: -5px;
+    }
+
+}

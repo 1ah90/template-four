@@ -1,0 +1,135 @@
+:root{
+    --blue-color:#0075ff;
+    --font-color1: black;
+    --font-color2:#ddd;
+    --background1:white;
+    --background2:#f1f5f9;
+    --background3:#77777720;
+    --box-shadow1: 6px 0px 20px 0px #00000033;
+    --transition: 0.3s;
+    --orange-color:#f59e0b;
+    --orange-color05:rgb(245, 158, 11,0.2);
+    --blue-color:#0075ff;
+    --blue-color05:rgb(0, 117, 255,0.2);
+    --green-color:#22c55e;
+    --green-color05:rgb(34, 197, 94,0.2);
+    --red-color:#f44336;
+    --border-input:2px solid #77777720;
+}
+.friends{
+    gap: 20px;
+}
+.friends .friend{
+    background-color: var(--background1);
+}
+.friends .friend .content{
+    position: relative;
+    height: 40px;
+}
+.friends .friend .fa-envelope,
+.friends .friend .fa-phone{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: var(--background3);
+    color: gray;
+    transition: var(--transition);
+    font-size: 13px;
+}
+.friends .friend .fa-envelope{
+    left: 50px;
+}
+.friends .friend img{
+    transition: var(--transition);
+}
+.friends .friend img:hover{
+    outline: 5px var(--blue-color) solid;
+}
+.friends .friend .fa-envelope:hover,
+.friends .friend .fa-phone:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends .friend .share li{
+    margin-bottom: 10px;
+}
+.friends .friend .share i{
+    width: 30px;
+}
+.friends .friend ul:last-child{
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.friends .friend .vip{
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%) rotate(20deg);
+    font-size: 30px;
+    color: var(--orange-color);
+    opacity: 0.3;
+    padding: 15px 13px ;
+    border: 3px solid var(--orange-color);
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+    font-weight: 700;
+    box-shadow: 3px 6px 13px 0px var(--orange-color);
+}
+.friends .friend .vip::before{
+    content: '';
+    width: 2px ;
+    height: 15px;
+    left: 0;
+    bottom: 0;
+    background-color: #f59e0b;
+    position: absolute;
+    transform: rotate(50deg);
+}
+.friends .friend .vip::after{
+    content: '';
+    width: 2px ;
+    height: 15px;
+    right: 0;
+    top: 0;
+    background-color: #f59e0b;
+    position: absolute;
+    transform: rotate(50deg);
+}
+@media (max-width:1200px) {
+    .friends .friend ul:last-child span{
+        flex: 1;
+    }
+}
+.friends .friend ul:last-child span{
+    font-size: 12px;
+    color: gray;
+}
+.friends .friend ul:last-child a{
+    color: white;
+}
+.friends .friend ul:last-child li{
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    font-size: 15px;
+    padding: 5px 7px ;
+    border-radius: 7px;
+}
+.friends .friend ul:last-child li:nth-of-type(1) {
+    background-color: var(--blue-color);
+}
+
+.friends .friend ul:last-child li:nth-of-type(1):hover{
+    background-color: #004fa9;
+}
+
+.friends .friend ul:last-child li:nth-of-type(2):hover{
+    background-color: #920b02;
+}
+
+.friends .friend ul:last-child li:nth-of-type(2){
+    background-color: var(--red-color);
+}

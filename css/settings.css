@@ -1,0 +1,354 @@
+:root{
+    --blue-color:#0075ff;
+    --font-color1: black;
+    --font-color2:#ddd;
+    --background1:white;
+    --background2:#f1f5f9;
+    --background3:#77777720;
+    --box-shadow1: 6px 0px 20px 0px #00000033;
+    --transition: 0.3s;
+    --orange-color:#f59e0b;
+    --orange-color05:rgb(245, 158, 11,0.2);
+    --blue-color:#0075ff;
+    --blue-color05:rgb(0, 117, 255,0.2);
+    --green-color:#22c55e;
+    --green-color05:rgb(34, 197, 94,0.2);
+    --red-color:#f44336;
+    --border-input:2px solid #77777720;
+}
+/* this is all checked box custom */
+.switch-holder{
+    width: 50px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+    
+}
+.switch-holder input{
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;   
+    cursor: pointer;
+
+}
+
+.switch-holder .switch{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-color: rgb(182, 179, 179);
+    border: none;
+    transition: var(--transition);
+    border-radius: 20px;
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: inset 0px 0px 3px 0px #0077ff6b;
+
+}
+.switch-holder .switch::before{
+    content: "\f00d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+    font-size: 10px;
+    text-align:center;
+    padding: 2px;
+    width: 11px;
+    color: rgb(182, 179, 179);
+    background-color: var(--background1);
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 100%;transition: var(--transition);
+}
+
+.switch-holder input:checked ~ .switch::before{
+    content: "\f00c";
+    left: 33px;
+    color: var(--blue-color);
+
+}
+.switch-holder input:checked ~ .switch{
+    background-color: var(--blue-color);
+    border: none;
+    box-shadow: none;
+
+    
+}
+/* next is widgets checked box custom */
+.widgets label{
+    position: relative;
+    cursor: pointer;
+    display: block;
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.widgets label input{
+    width: 0;
+    height: 0;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.widgets label .Check{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--background1);
+    border: 2px solid gray;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+.widgets label .Check::after{
+    content: '';
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    background-color: var(--blue-color);
+    position: absolute;
+    transition: var(--transition);
+    border-radius: 5px;
+
+}
+.widgets label .Check::before{
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 800;
+    font-size: 14px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    transition: var(--transition);
+    color: var(--background1);
+    display: none;
+    z-index: 1;
+    
+
+}
+.widgets label input:checked ~.Check::after{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-180deg);
+    left: 0px;
+    top: 0;
+}
+.widgets label:hover input ~ .Check{
+    border: 2px solid var(--blue-color);
+}
+.widgets label input:checked ~.Check{
+    background-color: transparent;
+    border: none;
+}
+.widgets label input:checked ~.Check::before{
+    display: block;
+    border: none;
+
+}
+
+/* here is .backup-manager for custom checkbox  */
+.holder-manger form label{
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+}
+.holder-manger form label span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    transition: var(--transition);
+}
+.holder-manger form label span::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    background-color: var(--blue-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    transition: var(--transition);
+}
+.holder-manger form label input{
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+form label input:checked ~ span::before{
+    background-color: var(--blue-color);
+    border-color: var(--blue-color);
+    width: 14px;
+    height: 14px;
+    border: 2px solid #0d519e;
+}
+form label:hover input ~ span{
+    border-color: var(--blue-color);
+}
+/* here is my Control start  */
+.control .control-web{
+    padding: 25px 0 25px;
+}
+
+
+.control textarea{
+    width: 100%;
+    height: 150px;
+    border: var(--border-input)
+}
+.control .control-web h5{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+@media (max-width:789px){
+    .control div{
+        gap: 20px;
+    }
+}
+
+
+/* here is my Control end  */
+/* here is my General start  */
+
+.general input{
+    width: 100%;
+    border: var(--border-input)
+}
+.general div p{
+    padding: 0 0 5px 5px;
+}
+.general a{
+    background-color: transparent;
+    color: var(--blue-color);
+}
+.general .email{
+    align-items: center;
+}
+.general .email input{
+    
+    background-color: var(--background3);
+    cursor: no-drop;
+}
+
+/* here is my General end  */
+/* here is my security start  */
+.security h4{
+    font-weight:  500;
+}
+.security p{
+    font-size: 14px;
+    padding-top: 10px;
+}
+.security a{
+    margin: auto 0 auto;
+}
+.security .pass a:hover{
+    background-color: #0d519e;
+}
+.security .device a{
+    background-color: var(--background2);
+    color: black;
+}
+@media (max-width:789px) {
+    .security a,
+    .security .device a,
+    .security .authentication .switch{
+        margin-left: auto;
+    }
+
+    .security .holder div{
+        gap: 20px;
+    }
+}
+/* here is my security end  */
+/* here is my social-info start  */
+.social-info .holder-social {
+    gap: 20px;
+}
+.social-info .holder-social div{
+    flex-direction: row-reverse;
+    background-color: var(--background3);
+    border: solid 1px var(--background3);
+}
+.social-info .holder-social div i{
+    color: #777;
+    width: 45px;
+    height: 100%;
+    padding:  10px 0 10px;
+    border-right:1px solid var(--background3);
+    
+}
+
+.social-info .holder-social div input{
+    border: none;
+    background-color: transparent;
+    padding-left: 10px ;
+}
+.social-info .holder-social input:focus + i{
+    color:black;
+}
+/* here is my social-info end  */
+
+
+
+
+
+/* here are .backup-size start and end  */
+.backup-manager .backup-size{
+    justify-content: space-between;
+    gap: 10px;
+}
+.backup-manager .backup-size .type{
+    flex: 1;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+        
+}
+.backup-manager .backup-size .type h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+@media (max-width:786px) {
+    .backup-manager .backup-size .type{
+        width: 100%;
+    }
+    
+}
+.type .change{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(178, 177, 177);
+    border-radius: 12px;
+    left: 0;
+    top: 0;
+}
+.type input{
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+}
+.type input:checked ~ .change{
+    border-color: var(--blue-color);
+}
+.type input:checked ~ h3,
+.type input:checked ~ i{
+    color: var(--blue-color);
+}

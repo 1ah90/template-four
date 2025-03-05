@@ -1,0 +1,167 @@
+:root{
+    --blue-color:#0075ff;
+    --font-color1: black;
+    --font-color2:#ddd;
+    --background1:white;
+    --background2:#f1f5f9;
+    --background3:#77777720;
+    --box-shadow1: 6px 0px 20px 0px #00000033;
+    --transition: 0.3s;
+    --orange-color:#f59e0b;
+    --orange-color05:rgb(245, 158, 11,0.2);
+    --blue-color:#0075ff;
+    --blue-color05:rgb(0, 117, 255,0.2);
+    --green-color:#22c55e;
+    --green-color05:rgb(34, 197, 94,0.2);
+    --red-color:#f44336;
+    --border-input:2px solid #77777720;
+}
+/* here is arrange main boxes in dashboard */
+.dashboard-info .myprofile,
+.dashboard-info .myskills,
+.dashboard-info .myactivities{
+    background-color: white;
+}
+.dashboard-info .holderboard{
+    width: 100%;
+    gap: 20px;
+}
+.dashboard-info .myprofile{
+    width: 100%;
+}
+.dashboard-info .holderboard div:first-child{
+    flex: 25%;
+
+}
+.dashboard-info .holderboard div:last-child{
+    flex: 70%;
+}
+
+/* my profile (first box) */
+ /* here is profile-date start  */
+.profile-data {
+    align-items: center;
+    padding: 100px 50px 100px 50px;
+    gap: 10px;
+    justify-content: center;
+}
+@media (max-width:786px) {
+    .profile-data{
+        padding: 50px;
+    }
+}
+.profile-data .line{
+    height: 4px;
+    background-color: var(--background3);
+
+}
+.profile-data .line span{
+    position: absolute;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+.profile-data ul li i{
+    color:#ffc107;
+}
+.profile-data span{
+    color: gray;
+    font-size: 14px;
+}
+.profile-data img{
+    width: 100px;
+}
+/* here end profile-data  */
+/* here my profile info start  */
+.profile-mine::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 52%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 70%;
+    background-color: var(--background2);
+}
+.profile-mine .general-info,
+.profile-mine .personal-info,
+.profile-mine .jop-info,
+.profile-mine .billing-info
+{
+    border-color: var(--background2);
+    padding: 20px;
+    transition: var(--transition);
+}
+.profile-mine .general-info:hover,
+.profile-mine .personal-info:hover,
+.profile-mine .jop-info:hover,
+.profile-mine .billing-info:hover
+{
+    background-color: var(--background2);
+}
+.profile-mine .title{
+    margin-bottom: 10px;
+} 
+.profile-mine .info{
+    font-size: 14px;
+}
+.profile-mine .info p{
+    display: block;
+    width: 250px;
+}
+.profile-mine .info span{
+    color: black;
+}
+
+/* end of profile information */
+
+/* here is my skills start  */
+.holderboard{
+    padding-top: 20px;
+}
+.holderboard .myskills .holder-skills li{
+    padding: 15px 0 15px 0;
+    border-bottom: solid 2px var(--background3);
+}
+.holderboard .myskills .holder-skills li span{
+    background-color: var(--font-color2);
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+@media (max-width:786px) {
+    .holderboard .myskills .holder-skills li{
+        margin: auto;
+    }
+}
+/* here is my skills end  */
+
+/* here is my activitie start  */
+.myactivities .holder-active li{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.myactivities .holder-active li img{
+    width: 70px;
+    padding-right: 10px;
+}
+.myactivities .holder-active li p:first-child span{
+    color: black;
+    padding-bottom: 10px;
+}
+@media (max-width:786px) {
+    .myactivities .holder-active li img{
+        margin: auto;
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .myactivities .holder-active li span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+}
+/* here is my activitie end  */
+
+
+

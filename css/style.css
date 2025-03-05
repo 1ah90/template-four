@@ -1,0 +1,892 @@
+:root{
+    --blue-color:#0075ff;
+    --font-color1: black;
+    --font-color2:#ddd;
+    --background1:white;
+    --background2:#f1f5f9;
+    --background3:#77777720;
+    --box-shadow1: 6px 0px 20px 0px #00000033;
+    --transition: 0.3s;
+    --orange-color:#f59e0b;
+    --orange-color05:rgb(245, 158, 11,0.2);
+    --blue-color:#0075ff;
+    --blue-color05:rgb(0, 117, 255,0.2);
+    --green-color:#22c55e;
+    --green-color05:rgb(34, 197, 94,0.2);
+    --red-color:#f44336;
+
+
+
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    resize: none;
+}
+*:focus {
+    outline: none;
+}
+
+body{
+    
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    
+}
+p{
+    color: #777;
+}
+ul,
+p,
+h1,
+h2,
+h3, 
+h4,
+h5,
+h6{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+ul,
+li{
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+/* small screen container
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }
+}
+/* mediam screen container */
+
+/* large screen container */
+/* @media (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+} */
+.layout{
+    min-height: 100vh;
+    width: 100%;
+    scrollbar-color: var(--blue-color);
+
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue-color);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #053872;
+    cursor:grab;
+}
+::-webkit-scrollbar-thumb:active{
+    cursor: grabbing;
+}
+.main-bar{
+    right: 0;
+    background-color: var(--background2);
+    height: 100%;
+    width: 85%;
+    margin-left: 15%;
+}
+.main-bar header{
+    height: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-bar header .profile{
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+/* .main-bar  header .search{
+} */
+.main-bar  header .search::before{
+    content: "\f002";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    left: 15px;
+    top: 12px;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+    color: #808080be;
+}
+.main-bar  header input{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #808080be;
+    border-radius: 22px;
+    padding: 10px 10px 10px 40px;
+}
+.main-bar  header input:focus::placeholder{
+    opacity: 0;
+    
+}
+.main-bar  header input::placeholder{
+    transition:  var(--transition);
+}
+.main-bar  header input:focus{
+    outline: none;
+    place-content: none;
+    width: 250px;
+    transition:  var(--transition);
+}
+.main-bar header img{
+    width: 35px;
+}
+.main-bar header::before{
+    content: '';
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    border-radius:50px;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 37, 37);
+}
+
+
+/* here i start side bar  */
+.side-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background1);
+    height: 100%;
+    width: 15%;
+    z-index: 1;
+    box-shadow: var(--box-shadow1);
+}
+.side-bar .title{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom:30px ;
+}
+.side-bar .title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 80px;
+    background-color: var(--font-color1);
+}
+.side-bar .title::after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    border-radius: 50%;
+    border: 5px var(--background1) solid;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background-color: var(--font-color1);
+
+}
+
+.side-bar ul li i{
+    font-size: 16px;
+    width: 40px;
+    text-align: center;
+}
+.side-bar ul li .active{
+    background-color: var(--background2);
+}
+.side-bar ul li a{
+    color: var(--font-color1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 15px 15px 15px;
+    height: 35px;
+    border-radius:5px;
+    font-size: 14px;
+    transition: var(--transition);
+    overflow: hidden;
+}
+.side-bar ul a:hover{
+    background-color: var(--background2);
+    
+}
+.side-bar ul li a span{
+    display: block;
+    width: 100%;
+    margin-left: 20px;
+    font-size: 14px;
+}
+@media (max-width:1100px) {
+    .side-bar{
+    width: 70px;
+    }
+    .side-bar .title{
+        padding: 0;
+        margin: 20px 0 20px ;
+        font-size: 14px;
+    }
+    .side-bar .title::before{
+        display: none;
+    }
+    .side-bar .title::after{
+        display: none;
+    }
+    .main-bar{
+        margin-left: 70px;
+        height: 100%;
+        width: calc(100% - 70px);
+        overflow: hidden;
+
+    }
+    .side-bar ul li a span{
+        display: none;
+    }
+    .side-bar ul li a{
+        justify-content: center;
+
+    }
+    .main-bar  header input:focus{
+        width: 150px;
+    }
+}
+
+/* here the side bar end  */
+/* Here is my dashboard start  */
+.dashboard-title::before{
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 130px;
+    height: 5px ;
+    background-color: var(--background1);
+}
+.dashboard-title::after{
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 50px;
+    height: 5px ;
+    background-color: var(--font-color1);
+}
+.dashboard-info{
+    width: 100%;
+    gap: 15px;
+}
+.dashboard-info .dashboard-box{
+    padding: 20px;
+    background-color: var(--background1);
+    flex-basis: 49%;
+    box-shadow: var(--box-shadow1);
+}
+@media (max-width: 1200px) {
+    .dashboard-info .dashboard-box {
+        flex-basis: 100%;
+    }
+}
+
+.dashboard-info .welcome{
+    z-index: 1;
+    overflow: hidden;
+}
+.dashboard-info .welcome::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: var(--background3);
+}
+.dashboard-info .welcome .avatar-img{
+    border: 2px var(--font-color2) solid;
+    outline: 2px white solid ;
+}
+.dashboard-info .welcome .welcome-img{
+    width: 200px;
+}
+.dashboard-info .profile-info{
+    position: relative;
+    margin-top: 20px;
+}
+.dashboard-info .profile-info::before{
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    border-top: 1px solid var(--font-color2);
+    border-bottom: 1px solid var(--font-color2);
+}
+.dashboard-info .profile-info h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.dashboard-info a{
+    background-color: var(--blue-color);
+    color:var(--font-color2);
+    padding: 5px 10px 5px 10px ;
+    margin: 0 0 0 auto;
+    transition: var(--transition);
+}
+.dashboard-info a:hover{
+}
+/* dashboard quick draft  */
+.dashboard-info .quick-draft textarea,
+.dashboard-info .quick-draft input{
+    border: none;
+    outline: none;
+    background-color: var(--background3);
+}
+.dashboard-info .quick-draft textarea{
+    height: 135px;
+}
+
+/* dashboard target start  */
+.targets{
+    gap: 20px;
+}
+.targets .box p,
+.targets .box h3{
+    padding-bottom: 5px;
+}
+/* holder-one */
+.targets .box:nth-child(1) .pro-holder{
+    background-color:var(--orange-color05);
+}
+.targets .box:nth-child(1) span{
+    width:85%;
+    height: 100%;
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    background-color: var(--orange-color);
+}
+.targets .box:nth-child(1) span::before{
+    content: attr(data-progress);
+    position: absolute;
+    right: -15px;
+    top: -35px;
+    color:white;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: var(--orange-color);
+}
+.targets .box:nth-child(1) span::after{
+    content: '';
+    border-color: var(--orange-color) transparent transparent transparent ;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    right: -6px;
+    top: -12px;
+}
+.icon-1{
+    background-color: var(--orange-color05);
+}
+.icon-1 i{
+    color: var(--orange-color);
+    font-size: 20px;
+}
+    /* holder-two */
+.targets .box:nth-child(2) .pro-holder{
+    background-color:var(--green-color05);
+}
+.targets .box:nth-of-type(2) span{
+    
+    height: 100%;
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    background-color: var(--green-color);
+}
+.targets .box:nth-child(2) span::before{
+    content: attr(data-progress);
+    position: absolute;
+    right: -15px;
+    top: -35px;
+    color:white;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: var(--green-color);
+}
+.targets .box:nth-child(2) span::after{
+    content: '';
+    border-color: var(--green-color) transparent transparent transparent ;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    right: -6px;
+    top: -12px;
+}
+.icon-2{
+    background-color: var(--green-color05);
+}
+.icon-2 i{
+    color: var(--green-color);
+    font-size: 20px;
+}
+
+    /* holder-three */
+.targets .box:nth-child(3) .pro-holder{
+    background-color:var(--blue-color05);
+}
+.targets .box:nth-of-type(3) span{
+    height: 100%;
+    position: absolute; 
+    left: 0; 
+    top: 0;
+    background-color: var(--blue-color);
+}
+.targets .box:nth-child(3) span::before{
+    content: attr(data-progress);
+    position: absolute;
+    right: -15px;
+    top: -35px;
+    color:white;
+    width: fit-content;
+    height: fit-content;
+    padding: 3px;
+    border-radius: 6px;
+    font-size: 12px;
+    background-color: var(--blue-color);
+}
+.targets .box:nth-child(3) span::after{
+    content: '';
+    border-color: var(--blue-color) transparent transparent transparent ;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    right: -6px;
+    top: -12px;
+}
+.icon-3{
+    background-color: var(--blue-color05);
+}
+.icon-3 i{
+    color: var(--blue-color);
+    font-size: 20px;
+}
+/* dashboard target end  */
+/* tickets  start  */
+
+.tickets-holder{
+    grid-template-columns: repeat(auto-fill , 48%);
+    gap: 15px;
+    padding-top: 20px;
+
+}
+.tickets-holder .box{
+    padding: 15px 30px 15px 30px;
+    border: 1px #77777743 solid;
+    border-radius: 12px;
+}
+@media (max-width: 1200px){
+    .tickets-holder{
+        grid-template-columns: repeat(auto-fill , 100%);
+    }
+    .tickets-holder .box{
+
+    }
+}
+.tickets-holder .box i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.tickets-holder .box:nth-child(1) i{
+    color: var(--orange-color);
+}
+.tickets-holder .box:nth-child(2) i{
+    color: var(--blue-color);
+}
+.tickets-holder .box:nth-child(3) i{
+    color: var(--green-color);
+}
+.tickets-holder .box:nth-child(4) i{
+    color: var(--red-color);
+}
+/* tickets  end  */
+/* here is my news start  */
+.holder-news{
+    padding-top: 20px;
+    gap: 20px;
+    
+}
+.holder-news .news .text {
+    display: block;
+    flex: 1;
+    text-align: left;
+    padding: 2px 20px 2px 20px;
+}
+@media (max-width:786px) {
+    .holder-news .news{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 10px;
+    }
+    .holder-news .news .text{
+        text-align: center;
+        padding: 20px 0 20px;
+        font-size: 22px;
+    }
+    .holder-news .news img{
+        width: 30%;
+    }
+} 
+    
+
+.holder-news .news .text h3{
+    font-size: 16px;
+}
+.holder-news .news .text p{
+    padding-top: 5px;
+    font-size: 15px;
+}
+.holder-news .news h6{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 300;
+    background-color: var(--background2);
+}
+/* here is my news end  */
+
+/* here is my Latest Tasks start  */
+
+.tasks .task i{
+    margin: auto;
+    transition: var(--transition);
+}
+.tasks .task i:hover{
+    color: var(--red-color);
+    cursor: pointer;
+}
+.tasks .deleted{
+    text-decoration: line-through;
+    opacity: 0.2;
+}
+/* here is my Latest Tasks end  */
+/* here is my Search start  */
+.holder-items .item h6{
+    background-color: var(--background3);
+    font-weight: 600;
+    font-size: 12px;
+}
+.holder-items .item h5{
+    font-weight: 500;
+    font-size: 16px;
+}
+/* here is my Search end  */
+
+/* here is my files start  */
+.holder-files  .file .text{
+    padding-left: 20px;
+}
+.holder-files  .file .text h5{
+    font-size: 16px;
+    font-weight: 500;
+}
+.holder-files  .file .text p{
+    font-size: 14px;
+}
+.holder-files  .file span{
+    background-color: var(--background3);
+    font-size: 12px;
+}
+/* here is my files end  */
+/* here is my Last Project Progress start  */
+.holder-progress{
+    gap: 10px;
+}
+.project-projress img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 180px;
+    opacity: 0.1;
+}
+.holder-progress h5{
+    padding-left: 40px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.holder-progress h5::before{
+    content: '';
+    position: absolute;
+    width: 25px ;
+    height: 25px;
+    border-radius: 100%;
+    background-color: var(--blue-color);
+    border: 1px solid white;
+    outline: 2px solid var(--blue-color);
+    left: -5px;
+    top: 15px;
+}
+.holder-progress h5:last-child::before{
+    background-color: white;
+}
+.holder-progress h5:nth-last-child(2)::before{
+    animation: light 2s 0.3s infinite;
+}
+@keyframes light {
+    50%{
+        background-color: rgb(0, 117, 255,0);
+    }
+}
+.holder-progress h5:not(:last-child)::after{
+    content: '';
+    position: absolute;
+    left: 7px;
+    bottom: -25px;
+    width: 2px;
+    height: 34px;
+    background-color: var(--blue-color);
+}
+@media (max-width:786px) {
+    .holder-progress h5{
+        font-size: 14px;
+    }
+    .holder-progress h5:not(:last-child)::after{
+        height: 31px;
+    }
+}
+/* here is my Last Project Progress end  */
+
+/* here is my Last reminders  start  */
+.holder-reminer li .text h5{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.holder-reminer li .text p{
+    font-size: 14px;
+
+}
+.holder-reminer li div:first-child{
+    border-right-style: solid ;
+    border-right-width: 2px;
+    margin-right: 10px;
+}
+.holder-reminer li div:first-child::before{
+    content: '';
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    position: absolute;
+    border-radius: 100%;
+}
+.holder-reminer li:nth-child(1) div:first-child::before{
+    background-color: var(--orange-color);
+}
+.holder-reminer li:nth-child(1) div:first-child{
+    border-right-color: var(--orange-color);
+}
+
+.holder-reminer li:nth-child(2) div:first-child::before{
+    background-color: var(--red-color);
+}
+.holder-reminer li:nth-child(2) div:first-child{
+    border-right-color: var(--red-color);
+}
+.holder-reminer li:nth-child(3) div:first-child::before{
+    background-color: var(--green-color);
+}
+.holder-reminer li:nth-child(3) div:first-child{
+    border-right-color: var(--green-color);
+}
+
+.holder-reminer li:nth-child(4) div:first-child::before{
+    background-color: var(--blue-color);
+}
+.holder-reminer li:nth-child(4) div:first-child{
+    border-right-color: var(--blue-color);
+}
+@media (max-width:786px) {
+    .holder-reminer ul{
+        gap: 50px;
+    }
+    .holder-reminer li{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .holder-reminer li .text h5,
+    .holder-reminer li .text p{
+        font-size: 12px;
+    }
+
+
+
+}
+/* here is my Last Teminders  end  */
+/* here is my post  start  */
+.holder-post .title img{
+    margin-right: 15px;
+}
+.holder-post .title h5{
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+.holder-post h5{
+    font-weight: 500;
+    font-size: 16px;
+}
+.holder-post ul{
+    justify-content: space-between;
+    opacity: 0.8;
+}
+.holder-post ul i{
+    padding: 5px;
+    color: #777;
+}
+
+/* here is my post  end  */
+/* here is my social media  start  */
+.holder-media li{
+    margin-bottom: 10px;
+    align-items: center;
+}
+.holder-media li:not(:first-child),
+.holder-media li span{
+    color: white;
+}
+.holder-media li .holder-icon,
+.holder-media li span{
+    margin-right: 10px;
+    transition: var(--transition);
+}
+.holder-media li .holder-icon:hover{
+    rotate: 10deg;
+}
+.holder-media li span{
+    font-size: 12px ;
+}
+.holder-media li .holder-icon{
+    font-size: 20px;
+}
+.holder-media li:nth-child(1) .holder-icon,
+.holder-media li:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.121);
+}
+.holder-media li:nth-child(1) span{
+    background-color: black;
+}
+
+.holder-media li:nth-child(2) .holder-icon,
+.holder-media li:nth-child(2),
+.holder-media li:nth-child(2) span {
+    background-color: rgb(0, 72, 255,0.7);
+}
+
+.holder-media li:nth-child(3) .holder-icon,
+.holder-media li:nth-child(3),
+.holder-media li:nth-child(3) span {
+    background-color: rgb(255, 0, 0 , 0.7);
+}
+
+
+.holder-media li:nth-child(4) .holder-icon,
+.holder-media li:nth-child(4),
+.holder-media li:nth-child(4) span {
+    background-color: rgba(0, 80, 179, 0.7);
+}
+@media (max-width:786px){
+    .holder-media li {
+        font-size: 13px;
+    }
+    .holder-media li span{
+        font-size: 10px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+/* here is my social media  end  */
+/* here is my projects  start  */
+.projects{
+    overflow-x: auto;
+}
+.projects table{
+    min-width: 1000px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 0;
+}
+.projects th{
+    background-color: rgb(128, 128, 128,0.3);
+    border: 1px solid rgb(128, 128, 128,0.3);
+    text-align: left;
+    padding: 15px;
+    font-weight: 700 ;
+
+}
+.projects td{
+    border: 1px solid rgb(128, 128, 128,0.3);
+    margin: 10px;
+    padding: 15px;
+}
+
+.projects td h5{
+    color: white;
+    font-size: 12px;
+}
+.projects tr:nth-child(2) td:last-child h5{
+    background-color: var(--orange-color);
+}
+.projects tr:nth-child(3) td:last-child h5{
+    background-color: var(--blue-color);
+}
+.projects tr:nth-child(4) td:last-child h5,
+.projects tr:nth-child(5) td:last-child h5,
+.projects tr:nth-child(7) td:last-child h5{
+    background-color: var(--green-color);
+}
+.projects tr:nth-child(6) td:last-child h5{
+    background-color: var(--red-color);
+}
+
+.projects td img{
+    border: solid 2px white;
+}
+.projects td img:not(:first-child){
+    margin-left: -20px;
+    border: solid 2px white;
+}
+/* here is my projects  end  */
+
+
+
+
+
+

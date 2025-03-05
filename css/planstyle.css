@@ -1,0 +1,131 @@
+:root{
+    --blue-color:#0075ff;
+    --font-color1: black;
+    --font-color2:#ddd;
+    --background1:white;
+    --background2:#f1f5f9;
+    --background3:#77777720;
+    --box-shadow1: 6px 0px 20px 0px #00000033;
+    --transition: 0.3s;
+    --orange-color:#f59e0b;
+    --orange-color05:rgb(245, 158, 11,0.2);
+    --blue-color:#0075ff;
+    --blue-color05:rgb(0, 117, 255,0.2);
+    --green-color:#22c55e;
+    --green-color05:rgb(34, 197, 94,0.2);
+    --red-color:#f44336;
+    --border-input:2px solid #77777720;
+}
+
+.plans{
+    grid-template-columns: repeat(auto-fill , minmax(500px , 1fr));
+    gap: 20px;
+}
+
+
+.plan{
+    background-color: var(--background1);
+}
+
+.plan .holder-price{
+    background-color: var(--green-color);
+    padding:50px  100px 50px 100px;
+    text-align: center;
+    color: var(--background1);
+    border: 4px solid var(--background1) ;
+    outline:  4px solid var(--green-color);
+}
+.plan:nth-child(2) .holder-price{
+    background-color: var(--blue-color);
+    border-color: var(--background1);
+    outline-color: var(--blue-color);
+}
+.plan:nth-child(3) .holder-price{
+    background-color: var(--orange-color);
+    border-color: var(--background1);
+    outline-color: var(--orange-color);
+}
+
+.plan .holder-price .type{
+    font-size: 30px;
+}
+.plan .holder-price .price{
+    font-size: 40px;
+    position: relative;
+}
+.plan .holder-price .price::before{
+    content:"\24" ;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 300;
+    font-size: 20px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+
+.plan .featurs{
+
+}
+.plan .featurs li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 20px;
+    border-bottom: 1px solid var(--background3);
+
+}
+.plan .featurs li i{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 22px;
+}
+.plan .featurs li .fa-xmark{
+    color: var(--red-color);
+}
+.plan .featurs li .fa-check{
+    color: var(--green-color);
+}
+.plan .featurs li p{
+    text-align: left;
+    width: 100%;
+    color: var(--font-color1);
+}
+
+.plan .featurs li span{
+    padding: 3px 10px;
+    background-color: gray;
+    border-radius: 100%;
+    color: var(--background1);
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.plan a{
+    color: white;
+    display: block;
+    width: fit-content;
+    background-color: var(--green-color);
+    padding: 10px;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+.plan:nth-child(2) a{
+    background-color: var(--blue-color);
+}
+@media (max-width:650px) {
+    .plans{
+        grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+        padding: 0;
+    }
+
+    .plan{
+        text-align: center;
+    }
+    .plan .holder-price{
+        padding: 50px 0;
+    }
+}

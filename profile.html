@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- all my pages -->
+    <!-- style sheet web -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profilestyle.css">
+    <!-- normlize all elements -->
+    <link rel="normalizesheet" href="css/normalize.css">
+    <!-- my framwork css -->
+    <link rel="stylesheet" href="css/MYframwork.css">
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/6c0ed9e6d5.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font open sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="side-bar">
+            <span class="title d-block t-c p-20 p-r">Ahmad</span>
+            <ul>
+                <li>
+                    <a href="./dashboard.html" ><i class="fa-solid fa-chart-gantt"></i> <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="./settings.html"><i class="fa-solid fa-gear"></i> <span>Settings</span></a>
+                </li>
+                <li>
+                    <a href="./profile.html" class="active"><i class="fa-regular fa-user"></i> <span>Profile</span></a>
+                </li>
+                <li>
+                    <a href="./projects.html"><i class="fa-solid fa-diagram-project"></i> <span>Projects</span></a>
+                </li>
+                <li>
+                    <a href="./courses.html"><i class="fa-solid fa-graduation-cap"></i> <span>Courses</span></a>
+                </li>
+                <li>
+                    <a href="./friends.html"><i class="fa-regular fa-credit-card"></i> <span>Friends</span></a>
+                </li>
+                <li>
+                    <a href="./files.html"><i class="fa-regular fa-file"></i> <span>Files</span></a>
+                </li>
+                <li>
+                    <a href="./plans.html"><i class="fa-regular fa-credit-card"></i><span>Plans</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="main-bar">
+            <header class="p-20 d-flex .bg-color-W">
+                <div class="search p-r">
+                    <input type="search" placeholder="Keyboard">
+                </div>
+                <div class="profile d-flex c-flex">
+                    <img src="./imgs/avatar.png" alt="">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+            </header>
+            <h1 class="dashboard-title p-20 p-r">profile</h1>
+            <div class="dashboard-info d-flex p-20">
+                <div class="myprofile d-flex border-r12">
+                    <div class="profile-data d-flex-c">
+                        <img src="./imgs/avatar.png" alt="">
+                        <h3>Ahmad Mutluq</h3>
+                        <p>Level 20</p>
+                        <div class="line p-r width100">
+                            <span style="width: 70%;"></span>
+                        </div>
+                        <ul class="d-flex">
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-star"></i>
+                            </li>
+                        </ul>
+                        <span>550 Rating</span>
+                    </div>
+                    <div class="profile-mine d-flex-c flex-1 border-r12 p-r">
+                        <div class="general-info line-border">
+                            <p class="title">General Information</p>
+                            <div class="info d-flex">
+                                <p>Full Name:<span>Ahmad Mutluq</span></p>
+                                <p>Gender: <span>Male</span></p>
+                                <p>country: <span>Palestine</span></p>
+                            </div>
+                        </div>
+                        <div class="personal-info line-border">
+                            <p class="title">Personal Information</p>
+                            <div class="info d-flex">
+                                <p>Email:<span>18ahmadz@gmail.com</span></p>
+                                <p>phone: <span>0547571***</span></p>
+                                <p>Date Of Birth: <span>2003/1/16</span></p>
+                            </div>
+                        </div>
+                        <div class="jop-info line-border">
+                            <p class="title">Job Information</p>
+                            <div class="info d-flex">
+                                <p>Title:<span>Full Stack Developer</span></p>
+                                <p>Programming Language: <span>Python</span></p> 
+                                <p>Years Of Experience:<span>3+</span></p> 
+
+                            </div>
+                        </div>
+                        <div class="billing-info line-border">
+                            <p class="title">Billing  Information</p>
+                            <div class="info d-flex">
+                                <p>Payment Method:<span>Paypal</span></p> 
+                                <p>Email: <span>email@website.com</span></p> 
+                                <p>Subscription: <span>Monthly</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="holderboard d-flex">
+                    <div class="myskills p-20 border-r12">
+                        <h2>My Skills</h2>
+                        <p class="m-p">complete Skills List</p>
+                        <ul class="holder-skills d-flex-c">
+                            <li>
+                                <span>HMTL</span>
+                                <span>Pugjs</span>
+                                <span>HAML</span>
+                            </li>
+                            <li>
+                                <span>CSS</span>
+                                <span>SASS</span>
+                                <span>Stylus</span>
+                            </li>
+                            <li>
+                                <span>JavaScript</span>
+                                <span>TypeScript</span>
+                            </li>
+                            <li>
+                                <span>Vuejs</span>
+                                <span>Reactjs</span>
+                            </li>
+                            <li>
+                                <span>Jest</span>
+                                <span>Jasmine</span>
+                            </li>
+                            <li>
+                                <span>PHP</span>
+                                <span>Laravel</span>
+                            </li>
+                            <li>
+                                <span>Python</span>
+                                <span>Django</span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="myactivities  p-20 border-r12">
+                        <h2>Lastest Activities</h2>
+                        <p class="m-p">Latest Activities Done By The User</p>
+                        <ul class="holder-active d-flex-c">
+                            <li class="d-flex">
+                                <img src="./imgs/activity-01.png" alt="">
+                                <div class="text flex-1">
+                                    <p class="d-flex flex-space">
+                                        <span>Store</span> <span>18:10</span>
+                                    </p>
+                                    <p class="d-flex flex-space">
+                                        <span>Bought The Mastering Python Course</span> <span>Yesterday</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <img src="./imgs/activity-02.png" alt="">
+                                <div class="text flex-1">
+                                    <p class="d-flex flex-space">
+                                        <span>Academy</span> <span>16:05</span>
+                                    </p>
+                                    <p class="d-flex flex-space">
+                                        <span>Got The PHP Certificate</span> <span>Yesterday</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <img src="./imgs/activity-03.png" alt="">
+                                <div class="text flex-1">
+                                    <p class="d-flex flex-space">
+                                        <span>Badges</span> <span>18:05</span>
+                                    </p>
+                                    <p class="d-flex flex-space">
+                                        <span>Unlocked The 10 Skills Badge</span> <span>Yesterday</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="d-flex">
+                                <img src="./imgs/activity-01.png" alt="">
+                                <div class="text flex-1">
+                                    <p class="d-flex flex-space">
+                                        <span>Store</span> <span>12:05</span>
+                                    </p>
+                                    <p class="d-flex flex-space">
+                                        <span>Bought The Typescript Course</span> <span>Yesterday</span>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
